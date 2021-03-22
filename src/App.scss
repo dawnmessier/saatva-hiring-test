@@ -1,0 +1,118 @@
+.logo svg {
+	display: block;
+	width: 75px;
+	fill: #c19678;
+	stroke: none;
+	cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+	.logo svg {
+		width: 92px;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.logo svg {
+		width: 107px;
+	}
+
+	.product-details {
+		margin-bottom: 50px;
+	}
+}
+
+.form-product {
+	width: 100%;
+}
+
+.product-details {
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 16px;
+
+	.price {
+		font-size: 15px;
+		color: #6b6257;
+	}
+}
+
+.product-rating {
+	margin-bottom: 20px;
+	border: 1px solid #2f8aad;
+	padding: 40px 10px 0;
+	position: relative;
+
+	legend {
+		color: #ffffff;
+		margin-bottom: 5px;
+		background-color: rgba(47, 138, 173, .7);
+		position: absolute;
+		top: 0;
+		bottom: 30px;
+		left: 0;
+		right: 0;
+		padding: 5px 10px;
+	}
+}
+
+.radio-group {
+	&.MuiFormGroup-root {
+		flex-direction: row;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+}
+
+.radio-button {
+	padding: 0 !important;
+
+	.MuiIconButton-label,
+	.MuiTouchRipple-root {
+		position: absolute !important;
+		left: -10000px;
+	}
+}
+
+.form-radio {
+	.MuiFormControlLabel-label {
+		vertical-align: middle;
+		display: -webkit-inline-flex;
+		display: inline-flex;
+		justify-content: center;
+		width: 100%;
+		padding: .75rem 1rem;
+		margin: 0;
+		overflow: visible;
+		border-radius: 0;
+		text-align: center;
+		white-space: nowrap;
+		user-select: none;
+		font-size: .9375rem;
+		line-height: 1;
+		color: #6b6257;
+		border: 1px solid #d2d2d2;
+		cursor: pointer;
+		background: linear-gradient(to right, #f0efee 50%, #fff 50%);
+		background-size: 200% 100%;
+		background-position: right bottom;
+		transition: all .5s ease-out;
+
+		&:hover {
+			color: #6b6257;
+			border-color: #d2d2d2;
+			background-position: left bottom;
+		}
+	}
+
+	&.is-selected {
+		.MuiFormControlLabel-label {
+			color: #fff;
+			background: #a6a19a;
+			border-color: #d2d2d2;
+			transition: none;
+		}
+	}
+}
